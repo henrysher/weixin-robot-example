@@ -25,7 +25,7 @@ module.exports = exports = function(webot){
     handler: function(info){
       var reply = {
         title: '感谢你关注 - 哼瘸子',
-        pic: 'https://github.com/henrysher/weixin-robot-example/raw/master/qrcode.jpg',
+        pic: 'https://raw.github.com/henrysher/weixin-robot-example/lamb-henry/qrcode.jpg',
         url: 'https://github.com/henrysher',
         description: [
           '建议你试试这几条指令:',
@@ -321,7 +321,7 @@ module.exports = exports = function(webot){
     pattern: /^news\s*(\d*)$/,
     handler: function(info){
       var reply = [
-        {title: '哼瘸子', description: '还在开发中...请耐心等待...', pic: 'https://github.com/henrysher/weixin-robot-example/raw/master/qrcode.jpg', url: 'https://github.com/henrysher'},
+        {title: '哼瘸子', description: '还在开发中...请耐心等待...', pic: 'https://raw.github.com/henrysher/weixin-robot-example/lamb-henry/qrcode.jpg', url: 'https://github.com/henrysher'},
       ];
       // 发送 "news 1" 时只回复一条图文消息
       return Number(info.param[1]) == 1 ? reply[0] : reply;
