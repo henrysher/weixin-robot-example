@@ -24,9 +24,9 @@ module.exports = exports = function(webot){
     },
     handler: function(info){
       var reply = {
-        title: '感谢你收听webot机器人',
-        pic: 'https://raw.github.com/node-webot/webot-example/master/qrcode.jpg',
-        url: 'https://github.com/node-webot/webot-example',
+        title: '感谢你关注 - 哼瘸子',
+        pic: 'https://github.com/henrysher/weixin-robot-example/raw/master/qrcode.jpg',
+        url: 'https://github.com/henrysher',
         description: [
           '建议你试试这几条指令:',
             '1. game : 玩玩猜数字的游戏吧',
@@ -321,9 +321,7 @@ module.exports = exports = function(webot){
     pattern: /^news\s*(\d*)$/,
     handler: function(info){
       var reply = [
-        {title: '微信机器人', description: '微信机器人测试帐号：webot', pic: 'https://raw.github.com/node-webot/webot-example/master/qrcode.jpg', url: 'https://github.com/node-webot/webot-example'},
-        {title: '豆瓣同城微信帐号', description: '豆瓣同城微信帐号二维码：douban-event', pic: 'http://i.imgur.com/ijE19.jpg', url: 'https://github.com/node-webot/weixin-robot'},
-        {title: '图文消息3', description: '图文消息描述3', pic: 'https://raw.github.com/node-webot/webot-example/master/qrcode.jpg', url: 'http://www.baidu.com'}
+        {title: '哼瘸子', description: '还在开发中...请耐心等待...', pic: 'https://github.com/henrysher/weixin-robot-example/raw/master/qrcode.jpg', url: 'https://github.com/henrysher'},
       ];
       // 发送 "news 1" 时只回复一条图文消息
       return Number(info.param[1]) == 1 ? reply[0] : reply;
